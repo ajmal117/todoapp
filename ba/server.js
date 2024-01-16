@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(
   cors(
     cors({
-      origin: ["todoapp-beta-three.vercel.app/"],
+      origin: ["https://todoapp-9ypc.vercel.app/"],
       methods: ["POST", "GET", "PUT"],
       credentials: true,
     })
