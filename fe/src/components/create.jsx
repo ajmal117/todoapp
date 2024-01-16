@@ -12,7 +12,7 @@ function Create() {
     axios
       .post("http://localhost:8000/add", { task: task })
       .then((result) => {
-        window.location.reload()
+        window.location.reload();
       })
       .catch((err) => {
         console.log(err);

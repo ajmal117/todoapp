@@ -1,5 +1,5 @@
 import React from "react";
-import { useState,location } from "react";
+import { useState } from "react";
 import Create from "./create";
 import axios from "axios";
 import "./styles.css";

@@ -5,10 +5,19 @@ const cors = require("cors");
 const TodoModel = require("./Models/Todo");
 
 const app = express();
-app.use(cors());
 app.use(express.json());
 
-let port = 8000;
+app.use(
+  cors(
+    cors({
+      origin: ["https://form-crud-db-front.vercel.app"],
+      methods: ["POST", "GET"],
+      credentials: true,
+    })
+  )
+);
+
+let port = 7000;
 
 app.get("/get", (req, res) => {
   TodoModel.find()
@@ -41,7 +50,9 @@ app.delete("/delete/:id", (req, res) => {
     .catch((err) => console.log(err));
 });
 
-mongoose.connect("mongodb://127.0.0.1:27017/test");
+mongoose.connect(
+  "mongodb+srv://user:user123@cluster0.lkshd4d.mongodb.net/test?retryWrites=true&w=majority"
+);
 
 app.get("", (req, res) => {
   res.send("this data send from the backend");
