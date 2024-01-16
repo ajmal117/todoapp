@@ -9,7 +9,7 @@ function Home() {
 
   useState(() => {
     axios
-      .get("http://localhost:8000/get")
+      .get("todoapp-beta-three.vercel.app/get")
       .then((res) => {
         setTodoList(res.data);
       })
@@ -18,7 +18,7 @@ function Home() {
 
   const handleDelete = (id) => {
     axios
-      .delete("http://localhost:8000/delete/" + id)
+      .delete("todoapp-beta-three.vercel.app/delete/" + id)
       .then((result) =>
       window.location.reload()
       )
@@ -28,7 +28,7 @@ function Home() {
   const handleEdit = (id) => {
     console.log(id);
     axios
-      .put("http://localhost:8000/update/" + id)
+      .put("todoapp-beta-three.vercel.app/" + id)
       .then((result) => {
         window.location.reload();
         console.log(result);

@@ -10,7 +10,7 @@ function Create() {
 
   const handleAdd = () => {
     axios
-      .post("http://localhost:8000/add", { task: task })
+      .post("todoapp-beta-three.vercel.app/add", { task: task })
       .then((result) => {
         window.location.reload();
       })
