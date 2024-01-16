@@ -40,7 +40,7 @@ function Home() {
     <div>
       <Create />
       <div>
-        {/* {todoList.length === 0 ? (
+        {todoList.length === 0 ? (
           <h1>No record</h1>
         ) : (
           todoList.map((item) => {
@@ -52,7 +52,7 @@ function Home() {
               </div>
             );
           })
-        )} */}
+        )}
       </div>
     </div>
   );
