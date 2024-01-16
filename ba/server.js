@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(
   cors(
     cors({
-      origin: ["https://form-crud-db-front.vercel.app"],
+      origin: [""],
       methods: ["POST", "GET"],
       credentials: true,
     })
