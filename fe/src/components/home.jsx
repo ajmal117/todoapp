@@ -50,7 +50,7 @@ function Home() {
                   className="doneBtn"
                   style={{ backgroundColor:" red "}}
                 >
-                  delete
+                  Delete
                 </button>
                 <button
                   onClick={() => handleEdit(item._id)}
