@@ -10,7 +10,7 @@ function Create() {
 
   const handleAdd = () => {
     axios
-      .post("hhttps://todoapp-xi-two.vercel.app/add", { task: task })
+      .post("https://todoapp-xi-two.vercel.app/add", { task: task })
       .then((result) => {
         console.log(result);
       })
