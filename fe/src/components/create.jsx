@@ -18,6 +18,7 @@ function Create() {
         console.log(err);
       });
   };
+  console.log(task);
 
   return (
     <div className="class1">
