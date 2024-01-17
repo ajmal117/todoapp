@@ -52,7 +52,7 @@ mongoose.connect(
   "mongodb+srv://user:user123@cluster0.lkshd4d.mongodb.net/test?retryWrites=true&w=majority"
 );
 
-app.get("", (req, res) => {
+app.get("/", (req, res) => {
   res.send("this data send from the backend");
 });
 
