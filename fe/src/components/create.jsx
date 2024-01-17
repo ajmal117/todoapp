@@ -12,13 +12,14 @@ function Create() {
     axios
       .post("https://todoapp-xi-two.vercel.app/add", { task: task })
       .then((result) => {
-        console.log(result);
+        // console.log(result);
+        window.location.reload();
       })
       .catch((err) => {
         console.log(err);
       });
   };
-  console.log(task);
+  // console.log(task);
 
   return (
     <div className="class1">
