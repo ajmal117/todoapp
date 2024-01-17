@@ -44,9 +44,7 @@
   text-decoration: line-through;
 }
 
-
-/* CSS */
-.donebtn {
+.doneBtn {
   background-color: #EA4C89;
   border-radius: 8px;
   border-style: none;
@@ -73,7 +71,7 @@
   touch-action: manipulation;
 }
 
-.donebtn:hover,
-.donebtn:focus {
+.doneBtn:hover,
+.doneBtn:focus {
   background-color: #F082AC;
 }

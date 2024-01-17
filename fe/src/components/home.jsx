@@ -47,14 +47,14 @@ function Home() {
                 <li className={item.done ? "editDone" : ""}>{item.task}</li>
                 <button
                   onClick={() => handleDelete(item._id)}
-                  className="donebtn"
+                  className="doneBtn"
                   style={{ backgroundColor: red }}
                 >
                   delete
                 </button>
                 <button
                   onClick={() => handleEdit(item._id)}
-                  className="donebtn"
+                  className="doneBtn"
                 >
                   Done
                 </button>
