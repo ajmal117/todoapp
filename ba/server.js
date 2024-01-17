@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+let port = 7000;
 
 const TodoModel = require("./Models/Todo");
 
@@ -15,7 +16,6 @@ app.use(
   })
 );
 
-let port = 7000;
 
 app.get("/get", (req, res) => {
   TodoModel.find()
