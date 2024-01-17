@@ -28,10 +28,10 @@ function Home() {
   const handleEdit = (id) => {
     console.log(id);
     axios
-      .put("https://todoapp-xi-two.vercel.app/" + id)
+      .put("https://todoapp-xi-two.vercel.app/update/" + id)
       .then((result) => {
         window.location.reload();
-        console.log(result);
+        // console.log(result);
       })
       .catch((err) => console.log(err));
   };
