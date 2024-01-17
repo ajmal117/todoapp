@@ -48,7 +48,7 @@ function Home() {
                 <button
                   onClick={() => handleDelete(item._id)}
                   className="doneBtn"
-                  style={{ backgroundColor: red }}
+                  style={{ backgroundColor:" red "}}
                 >
                   delete
                 </button>
