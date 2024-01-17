@@ -49,11 +49,11 @@ app.delete("/delete/:id", (req, res) => {
 });
 
 mongoose.connect(
-  "mongodb+srv://user:user123@cluster0.lkshd4d.mongodb.net/test?retryWrites=true&w=majority"
+  "mongodb+srv://new:new123@cluster0.lkshd4d.mongodb.net/test?retryWrites=true&w=majority"
 );
 
 app.get("/", (req, res) => {
-  res.send("this data send from the backend");
+  res.json("this data send from the backend");
 });
 
 app.listen(port, (err) => {
