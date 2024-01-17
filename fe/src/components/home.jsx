@@ -19,9 +19,7 @@ function Home() {
   const handleDelete = (id) => {
     axios
       .delete("https://todoapp-xi-two.vercel.app/delete/" + id)
-      .then((result) =>
-      window.location.reload()
-      )
+      .then((result) => window.location.reload())
       .catch((err) => console.log(err));
   };
 
@@ -47,8 +45,19 @@ function Home() {
             return (
               <div className="mapDesign" key={item._id}>
                 <li className={item.done ? "editDone" : ""}>{item.task}</li>
-                <button onClick={() => handleDelete(item._id)}>delete</button>
-                <button onClick={() => handleEdit(item._id)}>Done</button>
+                <button
+                  onClick={() => handleDelete(item._id)}
+                  className="donebtn"
+                  style={{ backgroundColor: red }}
+                >
+                  delete
+                </button>
+                <button
+                  onClick={() => handleEdit(item._id)}
+                  className="donebtn"
+                >
+                  Done
+                </button>
               </div>
             );
           })
