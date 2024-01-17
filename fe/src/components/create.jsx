@@ -12,7 +12,7 @@ function Create() {
     axios
       .post("hhttps://todoapp-xi-two.vercel.app/add", { task: task })
       .then((result) => {
-        window.location.reload();
+        console.log(result);
       })
       .catch((err) => {
         console.log(err);
