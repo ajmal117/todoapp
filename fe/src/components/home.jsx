@@ -5,7 +5,7 @@ import axios from "axios";
 import "./styles.css";
 
 function Home() {
-  const [todoList, setTodoList] = useState({});
+  const [todoList, setTodoList] = useState([]);
 
   useState(() => {
     axios
