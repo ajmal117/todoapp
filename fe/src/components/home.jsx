@@ -41,15 +41,15 @@ function Home() {
         {todoList.length === 0 ? (
           <h1>No record</h1>
         ) : (
-          
           todoList.map((item) => {
             return (
               <div className="mapDesign" key={item._id}>
-                <li className={item.done ? "editDone" : ""}>{item.task}</li>
+                {/* <li className="listStyle">{item.task}hello</li> */}
+                <li className={item.done ? "editDone" : "listStyle"}>{item.task}hello</li>
                 <button
                   onClick={() => handleDelete(item._id)}
                   className="doneBtn"
-                  style={{ backgroundColor:" red "}}
+                  style={{ backgroundColor: " red " }}
                 >
                   Delete
                 </button>

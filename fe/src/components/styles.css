@@ -1,3 +1,10 @@
+.texyStyle {
+  font-family: SpaceGrotesk-Light;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 64px;
+}
 .class1 {
   display: flex;
   justify-content: center;
@@ -17,7 +24,7 @@
   box-shadow: 8px 2px 1px red;
   display: block;
 }
-.inputTodo::placeholder{
+.inputTodo::placeholder {
   font-size: 8px;
 }
 
@@ -38,21 +45,42 @@
   margin: 10px 0px;
   justify-content: space-around;
 }
-.editDone {
-  background-color: green;
+.listStyle {
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  list-style-type: "\1F610";
+  background-color: rgb(255, 84, 84);
   color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* .listStyle { */
+.editDone {
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
   text-decoration: line-through;
+  list-style-type: "\1F604";
+  background-color: rgb(79, 168, 79);
 }
 
 .doneBtn {
-  background-color: #EA4C89;
+  background-color: #ea4c89;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 40px;
@@ -73,5 +101,5 @@
 
 .doneBtn:hover,
 .doneBtn:focus {
-  background-color: #F082AC;
+  background-color: #f082ac;
 }
