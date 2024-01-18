@@ -24,7 +24,7 @@ function Create() {
   return (
     <div className="class1">
       <div className="cl2">
-        <h1>Todo List</h1>
+        <h1>My Todo App</h1>
         <div className="todoDiv">
           <input
             type="text"
@@ -36,6 +36,7 @@ function Create() {
             Add Todo
           </button>
         </div>
+        <h1 style={{ color: "green" }}>Todo List</h1>
       </div>
     </div>
   );

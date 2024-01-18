@@ -41,6 +41,7 @@ function Home() {
         {todoList.length === 0 ? (
           <h1>No record</h1>
         ) : (
+          
           todoList.map((item) => {
             return (
               <div className="mapDesign" key={item._id}>
