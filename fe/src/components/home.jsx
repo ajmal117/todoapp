@@ -45,7 +45,9 @@ function Home() {
             return (
               <div className="mapDesign" key={item._id}>
                 {/* <li className="listStyle">{item.task}hello</li> */}
-                <li className={item.done ? "editDone" : "listStyle"}>{item.task}hello</li>
+                <li className={item.done ? "editDone" : "listStyle"}>
+                  {item.task}
+                </li>
                 <button
                   onClick={() => handleDelete(item._id)}
                   className="doneBtn"
