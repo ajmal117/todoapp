@@ -3,9 +3,9 @@ import "./styles.css";
 import axios from "axios";
 
 function Create() {
-  const [task, settask] = useState();
+  const [task, setTask] = useState();
   const onchange = (e) => {
-    settask(e.target.value);
+    setTask(e.target.value);
   };
 
   const handleAdd = () => {
